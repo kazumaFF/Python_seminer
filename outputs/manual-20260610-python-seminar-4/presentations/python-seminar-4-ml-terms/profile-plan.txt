@@ -1,0 +1,9 @@
+task mode: create
+primary deck-profile: engineering-platform
+secondary profile gates: educational seminar material, regression workflow
+required proof objects: nonlinear curve, SVR epsilon tube, kernel mapping, CV folds, leakage comparison, seed flow, feature engineering pipeline
+source/asset requirements: no external sources or brand assets; use authored editable shapes and simple semantic SVG plots
+brand authenticity constraints: none
+profile-specific QA gates: diagrams must have clear labels, one main claim per slide, no decorative illustration
+known missing inputs: no assignment dataset supplied; examples remain conceptual and scikit-learn oriented
+

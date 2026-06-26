@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Local tool caches
+.uv-cache/
+.jupyter/
+.matplotlib/
+
+# Node dependencies
+node_modules/
+
+# Office temporary files
+~$*

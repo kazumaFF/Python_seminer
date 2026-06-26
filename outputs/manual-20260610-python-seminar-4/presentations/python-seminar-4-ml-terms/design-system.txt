@@ -1,0 +1,15 @@
+Slide size: 1280x720.
+Background: plain white.
+Typography: Hiragino Sans, with Arial-compatible sizing if substituted.
+Palette: ink #111827, muted #5B6573, blue #2563EB, teal #0F766E,
+orange #D97706, red #DC2626, green #16A34A, light neutrals.
+Chart grammar: simple axes, direct labels, no legends unless necessary.
+Diagram grammar: white or lightly tinted rectangles, 1px gray rules, blue for
+main flow, orange/red for warnings, green for correct workflow.
+Connector grammar: horizontal and vertical rules plus clear arrow text.
+Container grammar: only for real grouping, no nested cards.
+Footer grammar: small page marker and deck title.
+Title grammar: small kicker plus one claim-style title.
+Banned motifs: gradients, decorative icons, shadows, stock images, ornamental
+backgrounds, dense text-only slides.
+

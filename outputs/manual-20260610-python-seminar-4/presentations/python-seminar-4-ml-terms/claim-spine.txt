@@ -1,0 +1,37 @@
+Thesis: Nonlinear modeling can improve regression, but only if the validation
+workflow prevents leakage and keeps results reproducible.
+
+Audience: Python seminar learners preparing the fourth assignment.
+
+One-line arc: Start from nonlinear relationships, introduce SVR as a practical
+nonlinear regression model, then show the validation and feature-engineering
+rules needed to trust the result.
+
+Slide list:
+1. The assignment is one connected workflow, not separate vocabulary.
+   Proof: topic map.
+2. Nonlinear means the slope or effect changes across the input space.
+   Proof: line versus curve comparison.
+3. Nonlinear regression expands f(X) beyond a single hyperplane.
+   Proof: model family map.
+4. Model complexity must be balanced against overfitting.
+   Proof: underfit, good fit, overfit panels.
+5. SVR fits a function while ignoring errors inside an epsilon tube.
+   Proof: epsilon-tube plot.
+6. C, epsilon, and gamma control the main SVR trade-offs.
+   Proof: objective and parameter sliders.
+7. Kernels let SVR behave linearly in a transformed space.
+   Proof: kernel mapping diagram and RBF contour.
+8. The safe modeling unit is a Pipeline, not a loose sequence of steps.
+   Proof: train/test and pipeline workflow.
+9. Cross-validation estimates performance across multiple validation folds.
+   Proof: five-fold grid.
+10. Leakage makes scores look better than the deployed model will be.
+    Proof: bad versus good preprocessing flow.
+11. Seeds stabilize randomness but do not replace environment records.
+    Proof: seed propagation map.
+12. Feature engineering is useful only when it is fit inside validation.
+    Proof: raw-to-feature transformation map.
+13. A reliable assignment follows a repeatable checklist.
+    Proof: final workflow checklist.
+

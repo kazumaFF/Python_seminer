@@ -1,0 +1,20 @@
+{
+  "kNN": {
+    "best_cv_roc_auc": 0.8336620985603543,
+    "parameters": {
+      "classifier__n_neighbors": 21,
+      "classifier__p": 2,
+      "classifier__weights": "distance"
+    }
+  },
+  "Random Forest": {
+    "best_cv_roc_auc": 0.8414880952380953,
+    "parameters": {
+      "classifier__max_depth": 4,
+      "classifier__max_features": "log2",
+      "classifier__min_samples_leaf": 1,
+      "classifier__min_samples_split": 5,
+      "classifier__n_estimators": 300
+    }
+  }
+}
