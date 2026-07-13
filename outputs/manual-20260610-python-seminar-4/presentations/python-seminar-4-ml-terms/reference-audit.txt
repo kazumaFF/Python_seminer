@@ -1,4 +1,0 @@
-No source deck or visual reference was used as a template. The existing seminar
-folder contains 第４回予告.pptx, but the user did not request template-following
-or style inheritance. This deck uses a plain white educational visual system.
-

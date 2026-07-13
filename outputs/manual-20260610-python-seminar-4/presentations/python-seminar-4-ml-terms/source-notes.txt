@@ -1,4 +1,0 @@
-No external sources used. Content is based on standard machine-learning concepts:
-nonlinear regression, support vector regression, cross-validation, data leakage,
-random seeds, and feature engineering. All diagrams are authored from scratch.
-
