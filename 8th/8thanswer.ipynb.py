@@ -1,0 +1,32 @@
+import pandas as pd
+from sklearn.metrics import f1_score, confusion_matrix, ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
+
+def result(y_pred, y_answer):
+    # IDの過不足チェック
+    missing = set(y_answer['PassengerId']) - set(y_pred['PassengerId'])
+    extra = set(y_pred['PassengerId']) - set(y_answer['PassengerId'])
+    if missing:
+        print(f"⚠️ 未提出のID: {len(missing)}件")
+    if extra:
+        print(f"⚠️ 想定外のID: {len(extra)}件")
+
+    # PassengerIdで突き合わせ
+    merged = y_answer.merge(y_pred, on='PassengerId', suffixes=('_true', '_pred'))
+
+    f1 = f1_score(merged['Survived_true'], merged['Survived_pred'])
+    correct = (merged['Survived_true'] == merged['Survived_pred']).sum()
+    print(f"F1スコア: {f1:.4f} (正解数: {correct}/{len(merged)}件)")
+    
+    cm = confusion_matrix(merged['Survived_true'], merged['Survived_pred'])
+    ConfusionMatrixDisplay(cm, display_labels=['死亡(0)', '生存(1)']).plot()
+    plt.title('予測 vs 正解')
+    plt.show()
+
+    return f1
+
+# --- 使う側 ---
+y_answer = pd.read_csv('test_titanic.csv')  # 自分だけが持つ模範解答
+
+y_pred = pd.read_csv('submission.csv')
+result(y_pred, y_answer)

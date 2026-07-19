@@ -1,0 +1,239 @@
+{"kind":"deck","id":"pr/2t30gf","name":"Deck"}
+{"kind":"layout","layoutId":"c7887253-f720-4b7b-ac7f-7ab69fa2c75c","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"e11b6409-78c4-4053-b333-62369a71e241","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/5credp","slide":1,"title":"PYTHON SEMINAR #8","textShapes":4}
+{"kind":"shape","id":"sh/pc7y1sj6","slide":1,"name":"cover-accent","bbox":[1120,0,160,720]}
+{"kind":"textbox","id":"sh/29gz6d0v","slide":1,"name":"cover-kicker","text":"PYTHON SEMINAR #8","textPreview":"PYTHON SEMINAR #8","textChars":17,"textLines":1,"bbox":[52,48,460,36]}
+{"kind":"textbox","id":"sh/3apgzi1g","slide":1,"name":"cover-title","text":"タイタニック生存者予測\nモデル作成から答え合わせまで","textPreview":"タイタニック生存者予測 | モデル作成から答え合わせまで","textChars":26,"textLines":2,"bbox":[52,214,980,230]}
+{"kind":"textbox","id":"sh/g7eh4nip","slide":1,"name":"cover-subtitle","text":"XGBoost / 層化5-fold CV / F1最適化 / 予測CSV","textPreview":"XGBoost / 層化5-fold CV / F1最適化 / 予測CSV","textChars":37,"textLines":1,"bbox":[52,526,930,44]}
+{"kind":"textbox","id":"sh/h8nyxsja","slide":1,"name":"cover-date","text":"2026.07","textPreview":"2026.07","textChars":7,"textLines":1,"bbox":[52,650,260,24]}
+{"kind":"notes","id":"nt/5credp","slide":1,"text":""}
+{"kind":"slide","id":"sl/uz0moh","slide":2,"title":"PYTHON SEMINAR #8 / TITANIC","textShapes":13}
+{"kind":"textbox","id":"sh/r6dwvipw","slide":2,"name":"eyebrow-2","text":"PYTHON SEMINAR #8 / TITANIC","textPreview":"PYTHON SEMINAR #8 / TITANIC","textChars":27,"textLines":1,"bbox":[48,28,520,26]}
+{"kind":"textbox","id":"sh/s7md4n6h","slide":2,"name":"title-2","text":"ゴールは「予測CSVを正しく作る」こと","textPreview":"ゴールは「予測CSVを正しく作る」こと","textChars":19,"textLines":1,"bbox":[48,64,1180,68]}
+{"kind":"textbox","id":"sh/d8vexs72","slide":2,"name":"page-2","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1180,678,48,20]}
+{"kind":"shape","id":"sh/e94v6xon","slide":2,"name":"flow-arrow-train","bbox":[300,246,116,34]}
+{"kind":"shape","id":"sh/fadwz2ps","slide":2,"name":"flow-arrow-test","bbox":[300,414,116,34]}
+{"kind":"shape","id":"sh/0b6d876d","slide":2,"name":"flow-arrow-output","bbox":[740,326,116,40]}
+{"kind":"shape","id":"sh/1cfe1c7y","slide":2,"name":"flow-train-panel","bbox":[48,192,252,142]}
+{"kind":"textbox","id":"sh/udkvut83","slide":2,"name":"flow-train-title","text":"train","textPreview":"train","textChars":5,"textLines":1,"bbox":[68,208,214,38]}
+{"kind":"textbox","id":"sh/vetcnypo","slide":2,"name":"flow-train-body","text":"712行・正解あり\nモデルを学習","textPreview":"712行・正解あり | モデルを学習","textChars":16,"textLines":2,"bbox":[68,256,212,64]}
+{"kind":"shape","id":"sh/fydw7u1w","slide":2,"name":"flow-test-panel","bbox":[48,364,252,142]}
+{"kind":"textbox","id":"sh/ex4fep0b","slide":2,"name":"flow-test-title","text":"test","textPreview":"test","textChars":4,"textLines":1,"bbox":[68,380,214,38]}
+{"kind":"textbox","id":"sh/10fe94z2","slide":2,"name":"flow-test-body","text":"179行・正解なし\n最終モデルへ入力","textPreview":"179行・正解なし | 最終モデルへ入力","textChars":18,"textLines":2,"bbox":[68,428,212,64]}
+{"kind":"shape","id":"sh/0zmxgzih","slide":2,"name":"flow-model-panel","bbox":[416,224,324,250]}
+{"kind":"textbox","id":"sh/rudw3a10","slide":2,"name":"flow-model-title","text":"XGBoost","textPreview":"XGBoost","textChars":7,"textLines":1,"bbox":[436,240,286,38]}
+{"kind":"textbox","id":"sh/qt4fa50f","slide":2,"name":"flow-model-body","text":"trainで学習\n\ntestを前処理し\n生存確率を予測","textPreview":"trainで学習 |  | testを前処理し | 生存確率を予測","textChars":27,"textLines":4,"bbox":[436,288,284,172]}
+{"kind":"shape","id":"sh/dwve5kjq","slide":2,"name":"flow-csv-panel","bbox":[856,258,336,184]}
+{"kind":"textbox","id":"sh/svmxcfil","slide":2,"name":"flow-csv-title","text":"予測CSV","textPreview":"予測CSV","textChars":5,"textLines":1,"bbox":[876,274,298,38]}
+{"kind":"textbox","id":"sh/36twza1o","slide":2,"name":"flow-csv-body","text":"PassengerId / Survived\n2列・179行","textPreview":"PassengerId / Survived | 2列・179行","textChars":30,"textLines":2,"bbox":[876,322,296,106]}
+{"kind":"shape","id":"sh/i5kf6503","slide":2,"name":"id-key-panel","bbox":[48,548,1144,92]}
+{"kind":"textbox","id":"sh/61kfi5kb","slide":2,"name":"id-key-title","text":"PassengerIdの役割","textPreview":"PassengerIdの役割","textChars":14,"textLines":1,"bbox":[76,573,280,34]}
+{"kind":"textbox","id":"sh/72tgbalg","slide":2,"name":"id-key-body","text":"特徴量には入れず、test予測と正解を1対1で対応づけるキーにする。","textPreview":"特徴量には入れず、test予測と正解を1対1で対応づけるキーにする。","textChars":34,"textLines":1,"bbox":[350,569,808,42]}
+{"kind":"notes","id":"nt/uz0moh","slide":2,"text":""}
+{"kind":"slide","id":"sl/k0r6jh","slide":3,"title":"PYTHON SEMINAR #8 / TITANIC","textShapes":11}
+{"kind":"textbox","id":"sh/p8nadsvu","slide":3,"name":"eyebrow-3","text":"PYTHON SEMINAR #8 / TITANIC","textPreview":"PYTHON SEMINAR #8 / TITANIC","textChars":27,"textLines":1,"bbox":[48,28,520,26]}
+{"kind":"textbox","id":"sh/25wr2dw3","slide":3,"name":"title-3","text":"trainとtestは役割を分けて扱う","textPreview":"trainとtestは役割を分けて扱う","textChars":19,"textLines":1,"bbox":[48,64,1180,68]}
+{"kind":"textbox","id":"sh/365sbido","slide":3,"name":"page-3","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1180,678,48,20]}
+{"kind":"textbox","id":"sh/cby98ne5","slide":3,"name":"data-train-label","text":"学習側","textPreview":"学習側","textChars":3,"textLines":1,"bbox":[48,158,160,26]}
+{"kind":"shape","id":"sh/dc7ahsvq","slide":3,"name":"data-train-panel","bbox":[48,192,548,286]}
+{"kind":"textbox","id":"sh/q9gr6xwf","slide":3,"name":"data-train-title","text":"train_titanic.csv","textPreview":"train_titanic.csv","textChars":17,"textLines":1,"bbox":[68,208,510,38]}
+{"kind":"textbox","id":"sh/bapsf2d0","slide":3,"name":"data-train-body","text":"・712行 × 12列\n・正解列 Survived を含む\n・X_raw：説明変数\n・y：0/1の正解ラベル\n・生存者割合：38.34%","textPreview":"・712行 × 12列 | ・正解列 Survived を含む | ・X_raw：説明変数 | ・y：0/1の正解ラベル | ・生存者割合：38.34%","textChars":68,"textLines":5,"bbox":[68,256,508,208]}
+{"kind":"textbox","id":"sh/sfu9w3e1","slide":3,"name":"data-test-label","text":"予測側","textPreview":"予測側","textChars":3,"textLines":1,"bbox":[640,158,160,26]}
+{"kind":"shape","id":"sh/tg3q58vm","slide":3,"name":"data-test-panel","bbox":[640,192,552,286]}
+{"kind":"textbox","id":"sh/xgret8ni","slide":3,"name":"data-test-title","text":"test_titanic.csv","textPreview":"test_titanic.csv","textChars":16,"textLines":1,"bbox":[660,208,514,38]}
+{"kind":"textbox","id":"sh/wvyx0n6x","slide":3,"name":"data-test-body","text":"・179行 × 11列\n・Survived は含まない\n・trainと同じ説明変数・列順\n・PassengerIdをtest_idsとして保存\n・最終モデルの予測先","textPreview":"・179行 × 11列 | ・Survived は含まない | ・trainと同じ説明変数・列順 | ・PassengerIdをtest_idsとして保存 | ・最終モデルの予測先","textChars":82,"textLines":5,"bbox":[660,256,512,208]}
+{"kind":"textbox","id":"sh/vupwri5c","slide":3,"name":"data-validation-title","text":"読み込み直後に止めるエラー","textPreview":"読み込み直後に止めるエラー","textChars":13,"textLines":1,"bbox":[48,516,330,34]}
+{"kind":"textbox","id":"sh/atgfydor","slide":3,"name":"data-validation-body","text":"① ファイルなし　② train/testの列不一致　③ PassengerId重複　④ Survivedの欠損・0/1以外","textPreview":"① ファイルなし　② train/testの列不一致　③ PassengerId重複　④ Survivedの欠損・0/1以外","textChars":62,"textLines":1,"bbox":[48,560,1140,50]}
+{"kind":"notes","id":"nt/k0r6jh","slide":3,"text":""}
+{"kind":"slide","id":"sl/bufq6i","slide":4,"title":"PYTHON SEMINAR #8 / TITANIC","textShapes":19}
+{"kind":"textbox","id":"sh/98zexobu","slide":4,"name":"eyebrow-4","text":"PYTHON SEMINAR #8 / TITANIC","textPreview":"PYTHON SEMINAR #8 / TITANIC","textChars":27,"textLines":1,"bbox":[48,28,520,26]}
+{"kind":"textbox","id":"sh/m58v2tcj","slide":4,"name":"title-4","text":"主な8つの派生特徴量を作る","textPreview":"主な8つの派生特徴量を作る","textChars":13,"textLines":1,"bbox":[48,64,1180,68]}
+{"kind":"textbox","id":"sh/n6hwvyt4","slide":4,"name":"page-4","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1180,678,48,20]}
+{"kind":"shape","id":"sh/wbqd83al","slide":4,"name":"feat-1-panel","bbox":[48,184,256,176]}
+{"kind":"textbox","id":"sh/xcje18b6","slide":4,"name":"feat-1-title","text":"Pclass","textPreview":"Pclass","textChars":6,"textLines":1,"bbox":[68,200,218,38]}
+{"kind":"textbox","id":"sh/a98v6tsf","slide":4,"name":"feat-1-body","text":"等級1/2/3を区別","textPreview":"等級1/2/3を区別","textChars":10,"textLines":1,"bbox":[68,248,216,98]}
+{"kind":"shape","id":"sh/bahwzyt0","slide":4,"name":"feat-2-panel","bbox":[344,184,256,176]}
+{"kind":"textbox","id":"sh/kzaxcnah","slide":4,"name":"feat-2-title","text":"FamilySize","textPreview":"FamilySize","textChars":10,"textLines":1,"bbox":[364,200,218,38]}
+{"kind":"textbox","id":"sh/50je58b2","slide":4,"name":"feat-2-body","text":"SibSp + Parch + 1","textPreview":"SibSp + Parch + 1","textChars":17,"textLines":1,"bbox":[364,248,216,98]}
+{"kind":"shape","id":"sh/5w3u98n2","slide":4,"name":"feat-3-panel","bbox":[640,184,256,176]}
+{"kind":"textbox","id":"sh/kvud0n6h","slide":4,"name":"feat-3-title","text":"IsAlone","textPreview":"IsAlone","textChars":7,"textLines":1,"bbox":[660,200,218,38]}
+{"kind":"textbox","id":"sh/ju1c7i5c","slide":4,"name":"feat-3-body","text":"FamilySize=1なら1","textPreview":"FamilySize=1なら1","textChars":15,"textLines":1,"bbox":[660,248,216,98]}
+{"kind":"shape","id":"sh/itsvydor","slide":4,"name":"feat-4-panel","bbox":[936,184,256,176]}
+{"kind":"textbox","id":"sh/tk3udsne","slide":4,"name":"feat-4-title","text":"FarePerPerson","textPreview":"FarePerPerson","textChars":13,"textLines":1,"bbox":[956,200,218,38]}
+{"kind":"textbox","id":"sh/sjud4n6t","slide":4,"name":"feat-4-body","text":"Fare ÷ FamilySize","textPreview":"Fare ÷ FamilySize","textChars":17,"textLines":1,"bbox":[956,248,216,98]}
+{"kind":"shape","id":"sh/7ilcbi58","slide":4,"name":"feat-5-panel","bbox":[48,414,256,176]}
+{"kind":"textbox","id":"sh/6hcv2don","slide":4,"name":"feat-5-title","text":"Title","textPreview":"Title","textChars":5,"textLines":1,"bbox":[68,430,218,38]}
+{"kind":"textbox","id":"sh/9oju1onu","slide":4,"name":"feat-5-body","text":"Nameから敬称を抽出","textPreview":"Nameから敬称を抽出","textChars":11,"textLines":1,"bbox":[68,478,216,98]}
+{"kind":"shape","id":"sh/8nats36p","slide":4,"name":"feat-6-panel","bbox":[344,414,256,176]}
+{"kind":"textbox","id":"sh/0jel4nih","slide":4,"name":"feat-6-title","text":"CabinDeck","textPreview":"CabinDeck","textChars":9,"textLines":1,"bbox":[364,430,218,38]}
+{"kind":"textbox","id":"sh/lknmxsz2","slide":4,"name":"feat-6-body","text":"Cabin先頭文字を抽出","textPreview":"Cabin先頭文字を抽出","textChars":12,"textLines":1,"bbox":[364,478,216,98]}
+{"kind":"shape","id":"sh/yhw32x0b","slide":4,"name":"feat-7-panel","bbox":[640,414,256,176]}
+{"kind":"textbox","id":"sh/zi54vi1w","slide":4,"name":"feat-7-title","text":"欠損フラグ","textPreview":"欠損フラグ","textChars":5,"textLines":1,"bbox":[660,430,218,38]}
+{"kind":"textbox","id":"sh/8nyl87it","slide":4,"name":"feat-7-body","text":"AgeMissing / HasCabin","textPreview":"AgeMissing / HasCabin","textChars":21,"textLines":1,"bbox":[660,478,216,98]}
+{"kind":"shape","id":"sh/987m1czy","slide":4,"name":"feat-8-panel","bbox":[936,414,256,176]}
+{"kind":"textbox","id":"sh/mlg36x0n","slide":4,"name":"feat-8-title","text":"TicketPrefix","textPreview":"TicketPrefix","textChars":12,"textLines":1,"bbox":[956,430,218,38]}
+{"kind":"textbox","id":"sh/nmp4z2h8","slide":4,"name":"feat-8-body","text":"数字・記号を除いて接頭辞を残す","textPreview":"数字・記号を除いて接頭辞を残す","textChars":15,"textLines":1,"bbox":[956,478,216,98]}
+{"kind":"notes","id":"nt/bufq6i","slide":4,"text":""}
+{"kind":"slide","id":"sl/68vj7e","slide":5,"title":"PYTHON SEMINAR #8 / TITANIC","textShapes":10}
+{"kind":"textbox","id":"sh/0zqp8nqt","slide":5,"name":"eyebrow-5","text":"PYTHON SEMINAR #8 / TITANIC","textPreview":"PYTHON SEMINAR #8 / TITANIC","textChars":27,"textLines":1,"bbox":[48,28,520,26]}
+{"kind":"textbox","id":"sh/zyh8zip8","slide":5,"name":"title-5","text":"列の種類ごとに前処理を分け、漏洩を防ぐ","textPreview":"列の種類ごとに前処理を分け、漏洩を防ぐ","textChars":19,"textLines":1,"bbox":[48,64,1180,68]}
+{"kind":"textbox","id":"sh/ex876d8n","slide":5,"name":"page-5","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1180,678,48,20]}
+{"kind":"shape","id":"sh/dwzqx872","slide":5,"name":"prep-num-panel","bbox":[48,190,352,328]}
+{"kind":"textbox","id":"sh/cb6p4nqh","slide":5,"name":"prep-num-title","text":"数値列","textPreview":"数値列","textChars":3,"textLines":1,"bbox":[68,206,314,38]}
+{"kind":"textbox","id":"sh/rax8vipw","slide":5,"name":"prep-num-body","text":"Age / Fare / FamilySize など\n\n1. 数値へ安全に変換\n2. 学習foldの中央値を計算\n3. 欠損を中央値で補完\n\n外れ値の影響を受けにくい中央値を使う。","textPreview":"Age / Fare / FamilySize など |  | 1. 数値へ安全に変換 | 2. 学習foldの中央値を計算 | 3. 欠損を中央値で補完 |  | 外れ値の影響を受けにくい中央値を使う。","textChars":90,"textLines":7,"bbox":[68,254,312,250]}
+{"kind":"shape","id":"sh/q9o72d8b","slide":5,"name":"prep-cat-panel","bbox":[464,190,352,328]}
+{"kind":"textbox","id":"sh/p8fqt8rq","slide":5,"name":"prep-cat-title","text":"カテゴリ列","textPreview":"カテゴリ列","textChars":5,"textLines":1,"bbox":[484,206,314,38]}
+{"kind":"textbox","id":"sh/476p03ql","slide":5,"name":"prep-cat-body","text":"Sex / Embarked / Title など\n\n1. 欠損をUnknownへ\n2. One-hot encoding\n3. 未知カテゴリはignore\n\n文字列をXGBoostが扱える0/1列へ変える。","textPreview":"Sex / Embarked / Title など |  | 1. 欠損をUnknownへ | 2. One-hot encoding | 3. 未知カテゴリはignore |  | 文字列をXGBoostが扱える0/1列へ変える。","textChars":104,"textLines":7,"bbox":[484,254,312,250]}
+{"kind":"shape","id":"sh/6xo7mlob","slide":5,"name":"prep-leak-panel","bbox":[880,190,312,328]}
+{"kind":"textbox","id":"sh/7yx8fq5g","slide":5,"name":"prep-leak-title","text":"データ漏洩対策","textPreview":"データ漏洩対策","textChars":7,"textLines":1,"bbox":[900,206,274,38]}
+{"kind":"textbox","id":"sh/sz6pov61","slide":5,"name":"prep-leak-body","text":"学習fold：fit_transform\n検証fold：transformのみ\ntest：transformのみ\n\n中央値やカテゴリ一覧を検証・testから学ばない。","textPreview":"学習fold：fit_transform | 検証fold：transformのみ | test：transformのみ |  | 中央値やカテゴリ一覧を検証・testから学ばない。","textChars":83,"textLines":5,"bbox":[900,254,272,250]}
+{"kind":"textbox","id":"sh/t0fqh0nm","slide":5,"name":"prep-result","text":"変換結果：15特徴量 → One-hot encoding後 60列　｜　XGBoostのため標準化は行わない","textPreview":"変換結果：15特徴量 → One-hot encoding後 60列　｜　XGBoostのため標準化は行わない","textChars":55,"textLines":1,"bbox":[48,566,1144,48]}
+{"kind":"notes","id":"nt/68vj7e","slide":5,"text":""}
+{"kind":"slide","id":"sl/dc9tm0","slide":6,"title":"PYTHON SEMINAR #8 / TITANIC","textShapes":15}
+{"kind":"textbox","id":"sh/pcv6dgjy","slide":6,"name":"eyebrow-6","text":"PYTHON SEMINAR #8 / TITANIC","textPreview":"PYTHON SEMINAR #8 / TITANIC","textChars":27,"textLines":1,"bbox":[48,28,520,26]}
+{"kind":"textbox","id":"sh/294ni10n","slide":6,"name":"title-6","text":"層化5-foldで、全712行のOOF予測を作る","textPreview":"層化5-foldで、全712行のOOF予測を作る","textChars":24,"textLines":1,"bbox":[48,64,1180,68]}
+{"kind":"textbox","id":"sh/3adob618","slide":6,"name":"page-6","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1180,678,48,20]}
+{"kind":"shape","id":"sh/cz65obip","slide":6,"name":"fold-band-1","bbox":[48,158,216,38]}
+{"kind":"textbox","id":"sh/d0f6hgja","slide":6,"name":"fold-band-text-1","text":"fold 1","textPreview":"fold 1","textChars":6,"textLines":1,"bbox":[48,164,216,24]}
+{"kind":"shape","id":"sh/qd4nml0j","slide":6,"name":"fold-band-2","bbox":[276,158,216,38]}
+{"kind":"textbox","id":"sh/rydof614","slide":6,"name":"fold-band-text-2","text":"fold 2","textPreview":"fold 2","textChars":6,"textLines":1,"bbox":[276,164,216,24]}
+{"kind":"shape","id":"sh/0365svil","slide":6,"name":"fold-band-3","bbox":[504,158,216,38]}
+{"kind":"textbox","id":"sh/14f6l0z6","slide":6,"name":"fold-band-text-3","text":"fold 3","textPreview":"fold 3","textChars":6,"textLines":1,"bbox":[504,164,216,24]}
+{"kind":"shape","id":"sh/5ozidkfq","slide":6,"name":"fold-band-4","bbox":[732,158,216,38]}
+{"kind":"textbox","id":"sh/knq1kfe5","slide":6,"name":"fold-band-text-4","text":"fold 4","textPreview":"fold 4","textChars":6,"textLines":1,"bbox":[732,164,216,24]}
+{"kind":"shape","id":"sh/jmh0baxk","slide":6,"name":"fold-band-5","bbox":[960,158,216,38]}
+{"kind":"textbox","id":"sh/il8ji5wf","slide":6,"name":"fold-band-text-5","text":"fold 5","textPreview":"fold 5","textChars":6,"textLines":1,"bbox":[960,164,216,24]}
+{"kind":"shape","id":"sh/tcj2h4f2","slide":6,"name":"cv-arrow-1","bbox":[382,354,72,40]}
+{"kind":"shape","id":"sh/sba1ozeh","slide":6,"name":"cv-arrow-2","bbox":[794,354,72,40]}
+{"kind":"shape","id":"sh/7a10fuxw","slide":6,"name":"cv-step-1-panel","bbox":[48,260,334,250]}
+{"kind":"textbox","id":"sh/69sjmpwb","slide":6,"name":"cv-step-1-title","text":"1. 層化して分割","textPreview":"1. 層化して分割","textChars":9,"textLines":1,"bbox":[68,276,296,38]}
+{"kind":"textbox","id":"sh/9gfi50fi","slide":6,"name":"cv-step-1-body","text":"0/1の比率を保ち、\nshuffle=True / seed=8で\n5つに分ける。","textPreview":"0/1の比率を保ち、 | shuffle=True / seed=8で | 5つに分ける。","textChars":41,"textLines":3,"bbox":[68,324,294,172]}
+{"kind":"shape","id":"sh/8f61cvex","slide":6,"name":"cv-step-2-panel","bbox":[460,260,334,250]}
+{"kind":"textbox","id":"sh/0za1svmt","slide":6,"name":"cv-step-2-title","text":"2. 残り4foldで学習","textPreview":"2. 残り4foldで学習","textChars":13,"textLines":1,"bbox":[480,276,296,38]}
+{"kind":"textbox","id":"sh/10jil0ne","slide":6,"name":"cv-step-2-body","text":"前処理とXGBoostを\n学習側だけでfit。\n1foldは検証専用にする。","textPreview":"前処理とXGBoostを | 学習側だけでfit。 | 1foldは検証専用にする。","textChars":38,"textLines":3,"bbox":[480,324,294,172]}
+{"kind":"shape","id":"sh/exsjq543","slide":6,"name":"cv-step-3-panel","bbox":[872,260,320,250]}
+{"kind":"textbox","id":"sh/zy10jq58","slide":6,"name":"cv-step-3-title","text":"3. 検証確率を回収","textPreview":"3. 検証確率を回収","textChars":10,"textLines":1,"bbox":[892,276,282,38]}
+{"kind":"textbox","id":"sh/o3u1wfm5","slide":6,"name":"cv-step-3-body","text":"5回の検証確率を元の行へ格納。全行が一度だけ未学習モデルで予測される。","textPreview":"5回の検証確率を元の行へ格納。全行が一度だけ未学習モデルで予測される。","textChars":35,"textLines":1,"bbox":[892,324,280,172]}
+{"kind":"textbox","id":"sh/9o32pknq","slide":6,"name":"cv-bottom","text":"OOF予測は、train全体にfitした自己採点より未知データ性能の目安として信頼しやすい。","textPreview":"OOF予測は、train全体にfitした自己採点より未知データ性能の目安として信頼しやすい。","textChars":46,"textLines":1,"bbox":[48,558,1144,48]}
+{"kind":"notes","id":"nt/dc9tm0","slide":6,"text":""}
+{"kind":"slide","id":"sl/rmhnlj","slide":7,"title":"PYTHON SEMINAR #8 / TITANIC","textShapes":21}
+{"kind":"textbox","id":"sh/l0nmx03e","slide":7,"name":"eyebrow-7","text":"PYTHON SEMINAR #8 / TITANIC","textPreview":"PYTHON SEMINAR #8 / TITANIC","textChars":27,"textLines":1,"bbox":[48,28,520,26]}
+{"kind":"textbox","id":"sh/ydw3mlkn","slide":7,"name":"title-7","text":"20候補を比較し、過学習しにくい条件を選ぶ","textPreview":"20候補を比較し、過学習しにくい条件を選ぶ","textChars":21,"textLines":1,"bbox":[48,64,1180,68]}
+{"kind":"textbox","id":"sh/ze54vql8","slide":7,"name":"page-7","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1180,678,48,20]}
+{"kind":"textbox","id":"sh/cbulkb2x","slide":7,"name":"search-equation","text":"20 × 5 = 100","textPreview":"20 × 5 = 100","textChars":12,"textLines":1,"bbox":[48,190,500,108]}
+{"kind":"textbox","id":"sh/xc3mtg32","slide":7,"name":"search-equation-label","text":"候補 × fold = CV fit回数","textPreview":"候補 × fold = CV fit回数","textChars":20,"textLines":1,"bbox":[52,300,470,42]}
+{"kind":"textbox","id":"sh/a9c3ilkr","slide":7,"name":"search-param","text":"探索する主な値\nmax_depth / learning_rate / min_child_weight\nsubsample / colsample_bytree / gamma\nreg_alpha / reg_lambda / scale_pos_weight","textPreview":"探索する主な値 | max_depth / learning_rate / min_child_weight | subsample / colsample_bytree / gamma | reg_alpha / reg_lambda / scale_pos_weight","textChars":131,"textLines":4,"bbox":[48,382,520,174]}
+{"kind":"shape","id":"sh/bal4r6lc","slide":7,"name":"search-steps-panel","bbox":[610,174,582,430]}
+{"kind":"textbox","id":"sh/w7y5wf21","slide":7,"name":"search-no-0","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[638,198,50,34]}
+{"kind":"textbox","id":"sh/h87m5k3m","slide":7,"name":"search-title-0","text":"候補を抽出","textPreview":"候補を抽出","textChars":5,"textLines":1,"bbox":[700,198,230,48]}
+{"kind":"textbox","id":"sh/xojmx0vm","slide":7,"name":"search-body-0","text":"ParameterSampler / seed=8","textPreview":"ParameterSampler / seed=8","textChars":25,"textLines":1,"bbox":[928,200,230,48]}
+{"kind":"textbox","id":"sh/wnal4ve1","slide":7,"name":"search-no-1","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[638,276,50,34]}
+{"kind":"textbox","id":"sh/bm14vqdw","slide":7,"name":"search-title-1","text":"最大2,000本","textPreview":"最大2,000本","textChars":8,"textLines":1,"bbox":[700,276,230,48]}
+{"kind":"textbox","id":"sh/als32lwb","slide":7,"name":"search-body-1","text":"検証loglossを監視する","textPreview":"検証loglossを監視する","textChars":14,"textLines":1,"bbox":[928,278,230,48]}
+{"kind":"textbox","id":"sh/9kjmtgvq","slide":7,"name":"search-no-2","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[638,354,50,34]}
+{"kind":"textbox","id":"sh/ojal0be5","slide":7,"name":"search-title-2","text":"early stopping=50","textPreview":"early stopping=50","textChars":17,"textLines":1,"bbox":[700,354,230,48]}
+{"kind":"textbox","id":"sh/nih4r6xk","slide":7,"name":"search-body-2","text":"50回改善しなければ停止","textPreview":"50回改善しなければ停止","textChars":12,"textLines":1,"bbox":[928,356,230,48]}
+{"kind":"textbox","id":"sh/mh83y1wz","slide":7,"name":"search-no-3","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[638,432,50,34]}
+{"kind":"textbox","id":"sh/tg3m5kvu","slide":7,"name":"search-title-3","text":"閾値0.20〜0.80","textPreview":"閾値0.20〜0.80","textChars":11,"textLines":1,"bbox":[700,432,230,48]}
+{"kind":"textbox","id":"sh/8fu5cfe9","slide":7,"name":"search-body-3","text":"0.01刻みでfold平均F1を計算","textPreview":"0.01刻みでfold平均F1を計算","textChars":18,"textLines":1,"bbox":[928,434,230,48]}
+{"kind":"textbox","id":"sh/cvmxo3qx","slide":7,"name":"search-no-4","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[638,510,50,34]}
+{"kind":"textbox","id":"sh/dwvyx87i","slide":7,"name":"search-title-4","text":"最終順位","textPreview":"最終順位","textChars":4,"textLines":1,"bbox":[700,510,230,48]}
+{"kind":"textbox","id":"sh/qt4fmd8r","slide":7,"name":"search-body-4","text":"平均F1 → ばらつき → 0.5距離 → 木の浅さ","textPreview":"平均F1 → ばらつき → 0.5距離 → 木の浅さ","textChars":26,"textLines":1,"bbox":[928,512,230,48]}
+{"kind":"notes","id":"nt/rmhnlj","slide":7,"text":""}
+{"kind":"slide","id":"sl/bzjzi9","slide":8,"title":"PYTHON SEMINAR #8 / TITANIC","textShapes":17}
+{"kind":"textbox","id":"sh/snupsjqt","slide":8,"name":"eyebrow-8","text":"PYTHON SEMINAR #8 / TITANIC","textPreview":"PYTHON SEMINAR #8 / TITANIC","textChars":27,"textLines":1,"bbox":[48,28,520,26]}
+{"kind":"textbox","id":"sh/721ozep8","slide":8,"name":"title-8","text":"F1が最大になる確率閾値を選ぶ","textPreview":"F1が最大になる確率閾値を選ぶ","textChars":15,"textLines":1,"bbox":[48,64,1180,68]}
+{"kind":"textbox","id":"sh/61s7q98n","slide":8,"name":"page-8","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1180,678,48,20]}
+{"kind":"textbox","id":"sh/hs365o7a","slide":8,"name":"f1-context","text":"生存確率を0/1へ変換する境界を固定0.50にせず、OOF予測だけで探索する。","textPreview":"生存確率を0/1へ変換する境界を固定0.50にせず、OOF予測だけで探索する。","textChars":39,"textLines":1,"bbox":[48,144,1144,42]}
+{"kind":"shape","id":"sh/grupwjqp","slide":8,"name":"f1-stat-panel","bbox":[48,212,350,238]}
+{"kind":"textbox","id":"sh/fqlo3yp4","slide":8,"name":"f1-stat-value","text":"0.8160","textPreview":"0.8160","textChars":6,"textLines":1,"bbox":[72,240,302,72]}
+{"kind":"textbox","id":"sh/upc7ut8j","slide":8,"name":"f1-stat-label","text":"OOF F1","textPreview":"OOF F1","textChars":6,"textLines":1,"bbox":[72,320,302,34]}
+{"kind":"textbox","id":"sh/xwj6t476","slide":8,"name":"f1-stat-detail","text":"全712件をまとめて評価","textPreview":"全712件をまとめて評価","textChars":12,"textLines":1,"bbox":[72,362,302,72]}
+{"kind":"shape","id":"sh/wva5kzql","slide":8,"name":"precision-stat-panel","bbox":[464,212,350,238]}
+{"kind":"textbox","id":"sh/eh0rapc3","slide":8,"name":"precision-stat-value","text":"0.8116","textPreview":"0.8116","textChars":6,"textLines":1,"bbox":[488,240,302,72]}
+{"kind":"textbox","id":"sh/fi9sjuto","slide":8,"name":"precision-stat-label","text":"Precision","textPreview":"Precision","textChars":9,"textLines":1,"bbox":[488,320,302,34]}
+{"kind":"textbox","id":"sh/0ji9czu9","slide":8,"name":"precision-stat-detail","text":"生存予測のうち実際に生存","textPreview":"生存予測のうち実際に生存","textChars":12,"textLines":1,"bbox":[488,362,302,72]}
+{"kind":"shape","id":"sh/1kralkbu","slide":8,"name":"recall-stat-panel","bbox":[880,212,312,238]}
+{"kind":"textbox","id":"sh/2lkbepcz","slide":8,"name":"recall-stat-value","text":"0.8205","textPreview":"0.8205","textChars":6,"textLines":1,"bbox":[904,240,264,72]}
+{"kind":"textbox","id":"sh/nmtsnutk","slide":8,"name":"recall-stat-label","text":"Recall","textPreview":"Recall","textChars":6,"textLines":1,"bbox":[904,320,264,34]}
+{"kind":"textbox","id":"sh/on2tgza5","slide":8,"name":"recall-stat-detail","text":"実際の生存者を拾えた割合","textPreview":"実際の生存者を拾えた割合","textChars":12,"textLines":1,"bbox":[904,362,264,72]}
+{"kind":"textbox","id":"sh/pobap4bq","slide":8,"name":"threshold-label-left","text":"0.20","textPreview":"0.20","textChars":4,"textLines":1,"bbox":[78,530,60,24]}
+{"kind":"textbox","id":"sh/a9kbi9sb","slide":8,"name":"threshold-label-right","text":"0.80","textPreview":"0.80","textChars":4,"textLines":1,"bbox":[1110,530,60,24]}
+{"kind":"shape","id":"sh/batsretw","slide":8,"name":"threshold-track","bbox":[100,564,1040,6]}
+{"kind":"shape","id":"sh/7ed8fe94","slide":8,"name":"threshold-before","bbox":[100,564,537,6]}
+{"kind":"shape","id":"sh/md4r698j","slide":8,"name":"threshold-marker","bbox":[624,548,26,38]}
+{"kind":"textbox","id":"sh/9gvahoru","slide":8,"name":"threshold-selected","text":"選択閾値 0.51","textPreview":"選択閾値 0.51","textChars":9,"textLines":1,"bbox":[535,594,210,32]}
+{"kind":"textbox","id":"sh/8fm98jq9","slide":8,"name":"threshold-fold","text":"fold平均 0.8163 / SD 0.0542","textPreview":"fold平均 0.8163 / SD 0.0542","textChars":25,"textLines":1,"bbox":[818,594,374,30]}
+{"kind":"notes","id":"nt/bzjzi9","slide":8,"text":""}
+{"kind":"slide","id":"sl/oc2iad","slide":9,"title":"PYTHON SEMINAR #8 / TITANIC","textShapes":14}
+{"kind":"textbox","id":"sh/0n2t83qx","slide":9,"name":"eyebrow-9","text":"PYTHON SEMINAR #8 / TITANIC","textPreview":"PYTHON SEMINAR #8 / TITANIC","textChars":27,"textLines":1,"bbox":[48,28,520,26]}
+{"kind":"textbox","id":"sh/fmtczi9c","slide":9,"name":"title-9","text":"条件決定後、全trainで最終モデルを1個だけ学習","textPreview":"条件決定後、全trainで最終モデルを1個だけ学習","textChars":25,"textLines":1,"bbox":[48,64,1180,68]}
+{"kind":"textbox","id":"sh/elkb6d8r","slide":9,"name":"page-9","text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1180,678,48,20]}
+{"kind":"textbox","id":"sh/psvu5s7e","slide":9,"name":"final-explain","text":"交差検証は条件決定のため。提出に使うのは、全trainを使って学習し直した1個のXGBoost。","textPreview":"交差検証は条件決定のため。提出に使うのは、全trainを使って学習し直した1個のXGBoost。","textChars":48,"textLines":1,"bbox":[48,144,1144,44]}
+{"kind":"shape","id":"sh/ormtcnq9","slide":9,"name":"final-rows-panel","bbox":[48,228,350,238]}
+{"kind":"textbox","id":"sh/nqdc3ipo","slide":9,"name":"final-rows-value","text":"712","textPreview":"712","textChars":3,"textLines":1,"bbox":[72,256,302,72]}
+{"kind":"textbox","id":"sh/2pkbad83","slide":9,"name":"final-rows-label","text":"学習行数","textPreview":"学習行数","textChars":4,"textLines":1,"bbox":[72,336,302,34]}
+{"kind":"textbox","id":"sh/5wratora","slide":9,"name":"final-rows-detail","text":"目的変数Survivedを含む全train","textPreview":"目的変数Survivedを含む全train","textChars":21,"textLines":1,"bbox":[72,378,302,72]}
+{"kind":"shape","id":"sh/4vit0jqp","slide":9,"name":"final-cols-panel","bbox":[464,228,350,238]}
+{"kind":"textbox","id":"sh/et8zupo3","slide":9,"name":"final-cols-value","text":"60","textPreview":"60","textChars":2,"textLines":1,"bbox":[488,256,302,72]}
+{"kind":"textbox","id":"sh/zuh0nu5o","slide":9,"name":"final-cols-label","text":"変換後の列数","textPreview":"変換後の列数","textChars":6,"textLines":1,"bbox":[488,336,302,34]}
+{"kind":"textbox","id":"sh/0vqhwz69","slide":9,"name":"final-cols-detail","text":"全trainで前処理器をfit","textPreview":"全trainで前処理器をfit","textChars":15,"textLines":1,"bbox":[488,378,302,72]}
+{"kind":"shape","id":"sh/1wzip4ne","slide":9,"name":"final-trees-panel","bbox":[880,228,312,238]}
+{"kind":"textbox","id":"sh/mx8zy9oz","slide":9,"name":"final-trees-value","text":"124","textPreview":"124","textChars":3,"textLines":1,"bbox":[904,256,264,72]}
+{"kind":"textbox","id":"sh/nyh0ru5k","slide":9,"name":"final-trees-label","text":"木の本数","textPreview":"木の本数","textChars":4,"textLines":1,"bbox":[904,336,264,34]}
+{"kind":"textbox","id":"sh/ozah0z65","slide":9,"name":"final-trees-detail","text":"各fold best_iterationの中央値","textPreview":"各fold best_iterationの中央値","textChars":24,"textLines":1,"bbox":[904,378,264,72]}
+{"kind":"shape","id":"sh/9kjit4nq","slide":9,"name":"final-callout","bbox":[48,520,1144,100]}
+{"kind":"textbox","id":"sh/alsz29ob","slide":9,"name":"final-callout-text","text":"final_model.fit(X_full_encoded, y)　→　testの生存確率を予測\n閾値0.51以上を1、未満を0へ変換","textPreview":"final_model.fit(X_full_encoded, y)　→　testの生存確率を予測 | 閾値0.51以上を1、未満を0へ変換","textChars":68,"textLines":2,"bbox":[78,536,1084,68]}
+{"kind":"notes","id":"nt/oc2iad","slide":9,"text":""}
+{"kind":"slide","id":"sl/wyoy1z","slide":10,"title":"PYTHON SEMINAR #8 / TITANIC","textShapes":12}
+{"kind":"textbox","id":"sh/vyx876p4","slide":10,"name":"eyebrow-10","text":"PYTHON SEMINAR #8 / TITANIC","textPreview":"PYTHON SEMINAR #8 / TITANIC","textChars":27,"textLines":1,"bbox":[48,28,520,26]}
+{"kind":"textbox","id":"sh/wz6p0bqp","slide":10,"name":"title-10","text":"test予測をPassengerIdと2列CSVにまとめる","textPreview":"test予測をPassengerIdと2列CSVにまとめる","textChars":29,"textLines":1,"bbox":[48,64,1180,68]}
+{"kind":"textbox","id":"sh/x0fq9w7a","slide":10,"name":"page-10","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1180,678,48,20]}
+{"kind":"textbox","id":"sh/mt47uh8n","slide":10,"name":"csv-sample-label","text":"出力例","textPreview":"出力例","textChars":3,"textLines":1,"bbox":[48,154,200,26]}
+{"kind":"textbox","id":"sh/8vmpwrqd","slide":10,"name":"csv-check-title","text":"保存前に確認すること","textPreview":"保存前に確認すること","textChars":10,"textLines":1,"bbox":[646,184,430,38]}
+{"kind":"textbox","id":"sh/9wf65w7y","slide":10,"name":"csv-check-0","text":"1. 列順が PassengerId, Survived","textPreview":"1. 列順が PassengerId, Survived","textChars":28,"textLines":1,"bbox":[646,248,520,34]}
+{"kind":"textbox","id":"sh/y547qh8b","slide":10,"name":"csv-check-1","text":"2. testと同じ179行・同じ順番","textPreview":"2. testと同じ179行・同じ順番","textChars":19,"textLines":1,"bbox":[646,300,520,34]}
+{"kind":"textbox","id":"sh/z6dozmpw","slide":10,"name":"csv-check-2","text":"3. PassengerIdに重複がない","textPreview":"3. PassengerIdに重複がない","textChars":20,"textLines":1,"bbox":[646,352,520,34]}
+{"kind":"textbox","id":"sh/zeh4jixg","slide":10,"name":"csv-check-3","text":"4. Survivedは欠損なしで0/1","textPreview":"4. Survivedは欠損なしで0/1","textChars":20,"textLines":1,"bbox":[646,404,520,34]}
+{"kind":"textbox","id":"sh/yd8nadwv","slide":10,"name":"csv-check-4","text":"5. index=FalseでCSV保存","textPreview":"5. index=FalseでCSV保存","textChars":20,"textLines":1,"bbox":[646,456,520,34]}
+{"kind":"textbox","id":"sh/lgjmlsfm","slide":10,"name":"csv-check-5","text":"6. 保存後に読み戻して一致確認","textPreview":"6. 保存後に読み戻して一致確認","textChars":16,"textLines":1,"bbox":[646,508,520,34]}
+{"kind":"textbox","id":"sh/kfq5cne1","slide":10,"name":"csv-path","text":"pysemi8_xgboost_predictions.csv　｜　179行　0: 116 / 1: 63","textPreview":"pysemi8_xgboost_predictions.csv　｜　179行　0: 116 / 1: 63","textChars":53,"textLines":1,"bbox":[48,592,1144,38]}
+{"kind":"table","id":"tb/mlsjah4r","slide":10,"name":"","rows":6,"cols":2,"preview":"PassengerId | Survived","bbox":[48,194,520,350]}
+{"kind":"notes","id":"nt/wyoy1z","slide":10,"text":""}
+{"kind":"slide","id":"sl/u4q15o","slide":11,"title":"PYTHON SEMINAR #8 / TITANIC","textShapes":12}
+{"kind":"textbox","id":"sh/vepwv2d0","slide":11,"name":"eyebrow-11","text":"PYTHON SEMINAR #8 / TITANIC","textPreview":"PYTHON SEMINAR #8 / TITANIC","textChars":27,"textLines":1,"bbox":[48,28,520,26]}
+{"kind":"textbox","id":"sh/gfyx4nul","slide":11,"name":"title-11","text":"答え合わせはPassengerIdで結合してF1を計算","textPreview":"答え合わせはPassengerIdで結合してF1を計算","textChars":27,"textLines":1,"bbox":[48,64,1180,68]}
+{"kind":"textbox","id":"sh/hg7exsv6","slide":11,"name":"page-11","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1180,678,48,20]}
+{"kind":"shape","id":"sh/ih0f6xcr","slide":11,"name":"score-arrow-left","bbox":[330,282,122,42]}
+{"kind":"shape","id":"sh/3i9wz2dc","slide":11,"name":"score-arrow-right","bbox":[828,282,122,42]}
+{"kind":"shape","id":"sh/4jix87ux","slide":11,"name":"score-arrow-down","bbox":[612,420,42,76]}
+{"kind":"shape","id":"sh/5kre1cvi","slide":11,"name":"score-pred-panel","bbox":[48,222,282,170]}
+{"kind":"textbox","id":"sh/ylwvudcn","slide":11,"name":"score-pred-title","text":"y_pred","textPreview":"y_pred","textChars":6,"textLines":1,"bbox":[68,238,244,38]}
+{"kind":"textbox","id":"sh/zm5wnid8","slide":11,"name":"score-pred-body","text":"作成したCSV\nPassengerId + 予測Survived","textPreview":"作成したCSV | PassengerId + 予測Survived","textChars":32,"textLines":2,"bbox":[68,286,242,92]}
+{"kind":"shape","id":"sh/j6x43y10","slide":11,"name":"score-merge-panel","bbox":[452,222,376,170]}
+{"kind":"textbox","id":"sh/y5onat0f","slide":11,"name":"score-merge-title","text":"1対1でmerge","textPreview":"1対1でmerge","textChars":9,"textLines":1,"bbox":[472,238,338,38]}
+{"kind":"textbox","id":"sh/lszm58j6","slide":11,"name":"score-merge-body","text":"on=PassengerId\n不足・余分・重複IDはエラー","textPreview":"on=PassengerId | 不足・余分・重複IDはエラー","textChars":29,"textLines":2,"bbox":[472,286,336,92]}
+{"kind":"shape","id":"sh/kr65c3il","slide":11,"name":"score-answer-panel","bbox":[950,222,242,170]}
+{"kind":"textbox","id":"sh/b2x4zy14","slide":11,"name":"score-answer-title","text":"y_answer","textPreview":"y_answer","textChars":8,"textLines":1,"bbox":[970,238,204,38]}
+{"kind":"textbox","id":"sh/a1on6t0j","slide":11,"name":"score-answer-body","text":"当日配布の正解\nPassengerId + 正解Survived","textPreview":"当日配布の正解 | PassengerId + 正解Survived","textChars":32,"textLines":2,"bbox":[970,286,202,92]}
+{"kind":"shape","id":"sh/x4fm1oju","slide":11,"name":"score-result-panel","bbox":[360,500,560,126]}
+{"kind":"textbox","id":"sh/w3658jip","slide":11,"name":"score-result-title","text":"結合後にF1と混同行列を表示","textPreview":"結合後にF1と混同行列を表示","textChars":14,"textLines":1,"bbox":[400,520,480,38]}
+{"kind":"textbox","id":"sh/nyd4ve1s","slide":11,"name":"score-result-formula","text":"F1 = 2 × Precision × Recall ÷ (Precision + Recall)","textPreview":"F1 = 2 × Precision × Recall ÷ (Precision + Recall)","textChars":50,"textLines":1,"bbox":[388,570,504,30]}
+{"kind":"textbox","id":"sh/mx432907","slide":11,"name":"score-note","text":"行順ではなくIDで突き合わせるため、予測を別の乗客へ誤対応させない。","textPreview":"行順ではなくIDで突き合わせるため、予測を別の乗客へ誤対応させない。","textChars":34,"textLines":1,"bbox":[48,644,1040,28]}
+{"kind":"notes","id":"nt/u4q15o","slide":11,"text":""}
+{"kind":"slide","id":"sl/n6qakq","slide":12,"title":"今回の流れで守ること","textShapes":12}
+{"kind":"textbox","id":"sh/03ipofyh","slide":12,"name":"close-kicker","text":"今回の流れで守ること","textPreview":"今回の流れで守ること","textChars":10,"textLines":1,"bbox":[48,44,480,34]}
+{"kind":"textbox","id":"sh/f2pofaxw","slide":12,"name":"close-title","text":"3つのルール","textPreview":"3つのルール","textChars":6,"textLines":1,"bbox":[48,138,900,90]}
+{"kind":"textbox","id":"sh/e1g7m5gb","slide":12,"name":"close-no-0","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[48,286,54,38]}
+{"kind":"textbox","id":"sh/p8r6l4fy","slide":12,"name":"close-rule-0","text":"役割を分ける","textPreview":"役割を分ける","textChars":6,"textLines":1,"bbox":[128,286,330,38]}
+{"kind":"textbox","id":"sh/o7ipszyd","slide":12,"name":"close-detail-0","text":"Survived＝正解。PassengerId＝キー（特徴量外）。","textPreview":"Survived＝正解。PassengerId＝キー（特徴量外）。","textChars":33,"textLines":1,"bbox":[480,288,600,56]}
+{"kind":"textbox","id":"sh/n69ojux8","slide":12,"name":"close-no-1","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[48,404,54,38]}
+{"kind":"textbox","id":"sh/2507qpgn","slide":12,"name":"close-rule-1","text":"学習情報を漏らさない","textPreview":"学習情報を漏らさない","textChars":10,"textLines":1,"bbox":[128,404,330,38]}
+{"kind":"textbox","id":"sh/5c7690fu","slide":12,"name":"close-detail-1","text":"中央値とOne-hotのカテゴリ一覧は学習foldだけでfitする。","textPreview":"中央値とOne-hotのカテゴリ一覧は学習foldだけでfitする。","textChars":34,"textLines":1,"bbox":[480,406,600,56]}
+{"kind":"textbox","id":"sh/4be5gvy9","slide":12,"name":"close-no-2","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[48,522,54,38]}
+{"kind":"textbox","id":"sh/i5w7exsj","slide":12,"name":"close-rule-2","text":"F1で最後まで統一する","textPreview":"F1で最後まで統一する","textChars":11,"textLines":1,"bbox":[128,522,330,38]}
+{"kind":"textbox","id":"sh/j65872t4","slide":12,"name":"close-detail-2","text":"モデル候補・閾値・当日の答え合わせを同じ指標で評価する。","textPreview":"モデル候補・閾値・当日の答え合わせを同じ指標で評価する。","textChars":28,"textLines":1,"bbox":[480,524,600,56]}
+{"kind":"shape","id":"sh/47epg7a9","slide":12,"name":"close-accent","bbox":[1120,0,160,720]}
+{"kind":"textbox","id":"sh/58nq9cbu","slide":12,"name":"close-line","text":"コード → 予測CSV → PassengerIdで答え合わせ","textPreview":"コード → 予測CSV → PassengerIdで答え合わせ","textChars":31,"textLines":1,"bbox":[48,646,880,34]}
+{"kind":"notes","id":"nt/n6qakq","slide":12,"text":""}
